@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".SecurityScreen">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:elevation="8dp"
+        android:text="@string/security"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/pinkCard"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/pink"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/textSos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="16dp"
+        android:text="@string/sos"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/pinkCard"
+        app:layout_constraintTop_toTopOf="@id/pinkCard" />
+
+    <TextView
+        android:id="@+id/textSosMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:elevation="16dp"
+        android:text="@string/sosMessage"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/imgSos"
+        app:layout_constraintStart_toStartOf="@id/pinkCard"
+        app:layout_constraintTop_toBottomOf="@id/textSos" />
+
+    <ImageView
+        android:id="@+id/imgSos"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="4dp"
+        android:elevation="16dp"
+        android:src="@drawable/icon_sos"
+        app:layout_constraintBottom_toBottomOf="@id/pinkCard"
+        app:layout_constraintEnd_toEndOf="@id/pinkCard"
+        app:layout_constraintTop_toTopOf="@id/pinkCard" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tealCard"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/teal"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="16dp"
+        app:layout_constraintTop_toBottomOf="@id/pinkCard" />
+
+    <TextView
+        android:id="@+id/textGuard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="16dp"
+        android:text="@string/guard"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tealCard"
+        app:layout_constraintTop_toTopOf="@id/tealCard" />
+
+    <TextView
+        android:id="@+id/textGuardMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:elevation="16dp"
+        android:text="@string/guardMessage"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toStartOf="@id/imgGuard"
+        app:layout_constraintStart_toStartOf="@id/tealCard"
+        app:layout_constraintTop_toBottomOf="@id/textGuard" />
+
+    <ImageView
+        android:id="@+id/imgGuard"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="4dp"
+        android:elevation="16dp"
+        android:src="@drawable/icon_security"
+        app:layout_constraintBottom_toBottomOf="@id/tealCard"
+        app:layout_constraintEnd_toEndOf="@id/tealCard"
+        app:layout_constraintTop_toTopOf="@id/tealCard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
