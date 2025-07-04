@@ -22,12 +22,14 @@ class MainActivity : AppCompatActivity() {
                 inflateHomeFragment()
             } else if (menuItem.itemId == R.id.nav_dashboard) {
                 inflateDashboardFragment()
-            } else {
+            } else if (menuItem.itemId == R.id.nav_profile) {
                 inflateProfileFragment()
             }
 
             true
         }
+
+        bottomBar.selectedItemId = R.id.nav_home
     }
 
     private fun MainActivity.inflateDashboardFragment() {
